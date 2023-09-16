@@ -35,7 +35,15 @@
           <div class="user-name">>Michelle Appleton</div>
           <div class="date">28 Jun 2020</div>
         </div>
-        <button class="share" onclick="shareOptions()"></button>
+        <button class="share"></button>
+        <div class="share-options">
+            <p class="share-caption">Share</p>
+            <a target="_blank" href="https://facebook.com"</a><img src="images/icon-facebook.svg" alt=""><br>
+            <a target="_blank" href="https://twitter.com"><img src="images/icon-twitter.svg" alt=""></a><br>
+            <a target="_blank" href="https://pinterest.com"><img src="images/icon-pinterest.svg" alt=""></a><br>
+
+            <!-- Add more social media icons and links as needed -->
+        </div>
       </div>
     </section>
   </main>
@@ -44,5 +52,14 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+    const shareButton = document.querySelector('.share');
+    const shareOptionsContainer = document.querySelector('.share-options');
+
+    shareButton.addEventListener('click', () => {
+        shareOptionsContainer.classList.toggle('show');
+    });
+</script>
 </body>
 </html>
