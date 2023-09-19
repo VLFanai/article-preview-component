@@ -91,6 +91,8 @@ main {
 }
 
 .right-section .detail button {
+    position: fixed;
+    inset: auto 25%;
     margin-left: auto;
     background-image: url('images/icon-share.svg');
     background-size: 50%;
@@ -109,12 +111,11 @@ main {
 
 .share-options.show {
     display: flex;
-    position: absolute;
-    top: 55%;
-    right: 5%;
     background-color: var(--very-dark-grayish-blue);
     border: none;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(-50%);
+    transform: translateX(190%);
+    transform: translateY(-100%);
+
 }
